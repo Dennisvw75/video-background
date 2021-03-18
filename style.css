@@ -1,0 +1,181 @@
+/* Not responsive! */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Blinker', sans-serif;
+  font-size: 100%;
+}
+
+.header {
+  position: relative;
+}
+nav {
+  position: absolute;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  /* background: rgba(0, 0, 0, 0.1); */
+  width: 100%;
+  min-height: 4vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 1;
+}
+
+h2 {
+  color: #fff;
+  font-size: 400;
+}
+li {
+  list-style-type: none;
+}
+
+a {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.4rem 0;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #000;
+  transform: scale(1.1) translateY(-1px);
+}
+
+.video-container {
+  position: relative;
+  min-height: 100%;
+}
+
+.video-container video {
+  background-position: center;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.title h1 {
+  font-size: 1.7rem;
+  font-weight: 300;
+  letter-spacing: 1.1px;
+  animation-name: fadeInH1;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  display: none;
+}
+.title h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 1.5rem;
+  letter-spacing: 1.1px;
+  animation-name: fadeInH3;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  display: none;
+}
+.title button {
+  display: inline-block;
+  padding: 0.9rem 1.9rem;
+  margin-top: 3rem;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #fff;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 700;
+  /* Not sure if needed */
+  font-family: inherit;
+  letter-spacing: 1.1px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  animation-name: fadeInH3;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  display: none;
+}
+.title button:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  transform: scale(1.1) translateY(-1px);
+}
+
+@keyframes fadeInH1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInH3 {
+  0% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Button seems to go with an other keyframe??? */
+
+/* @keyframes fadeInButton {
+  0% {
+    opacity: 0;
+    transform: rotate(180deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+} */

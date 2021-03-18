@@ -2,5 +2,7 @@
 
 ## HTML, CSS, and maybe a little js
 
+### Video by Kelly Lacy from Pexels
+
 Source of the video
-[Pexels](https://www.pexels.com/video/slow-motion-footage-of-sea-waves-lapping-on-the-shore-under-cloud-covered-sun-in-the-sky-3012528/)
+[Pexels](https://www.pexels.com/video/drone-footage-of-oceab-2256998/)
